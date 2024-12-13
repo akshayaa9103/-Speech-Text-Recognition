@@ -16,20 +16,7 @@ This project aims to implement a robust Speech-to-Text system capable of accurat
 ## Project Structure
 
 ---
-├── dataset/               # Directory containing the audio dataset and metadata
-├── src/                   # Source code for training and testing the model
-│   ├── preprocess.py      # Data preprocessing and feature extraction (MFCC)
-│   ├── model.py           # Model architecture and training code
-│   ├── evaluate.py        # Code to evaluate model performance
-│   ├── lime_explainer.py  # LIME implementation for model interpretation
-│   └── utils.py           # Utility functions for training and data handling
-├── output/                # Trained models and evaluation results
-│   ├── model_weights.h5   # Trained model weights
-│   ├── confusion_matrix.png  # Confusion matrix image
-│   └── results.json       # Evaluation results in JSON format
-├── requirements.txt       # Python dependencies
-├── README.md              # Project documentation
-└── LICENSE                # Project license
+dataset/ # Directory containing the audio dataset and metadata src/ # Source code for training and testing the model ├── preprocess.py # Data preprocessing and feature extraction (MFCC) ├── model.py # Model architecture and training code ├── evaluate.py # Code to evaluate model performance ├── lime_explainer.py # LIME implementation for model interpretation └── utils.py # Utility functions for training and data handling output/ # Trained models and evaluation results ├── model_weights.h5 # Trained model weights ├── confusion_matrix.png # Confusion matrix image └── results.json # Evaluation results in JSON format requirements.txt # Python dependencies README.md # Project documentation LICENSE # Project license
 ---
 ## Dataset
 The dataset used for training is AudioMNIST, which contains 30,000 audio samples recorded by 60 different speakers, representing spoken digits from 0 to 9. The dataset is publicly available on Kaggle (https://www.kaggle.com/datasets/sripaadsrinivasan/audio-mnist). The audio samples are accompanied by metadata, including speaker gender and age.
