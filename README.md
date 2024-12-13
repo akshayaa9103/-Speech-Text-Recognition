@@ -14,7 +14,8 @@
 ## Introduction
 This project aims to implement a robust Speech-to-Text system capable of accurately recognizing spoken digits. The model leverages deep learning methodologies, particularly a three-layer deep dense neural network with ReLU activation for classification. The feature extraction process involves MFCC to capture essential characteristics of audio signals, and LIME is used to enhance model transparency by offering explanations for its predictions.
 ## Project Structure
-'''
+
+---
 ├── dataset/               # Directory containing the audio dataset and metadata
 ├── src/                   # Source code for training and testing the model
 │   ├── preprocess.py      # Data preprocessing and feature extraction (MFCC)
@@ -29,7 +30,7 @@ This project aims to implement a robust Speech-to-Text system capable of accurat
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Project documentation
 └── LICENSE                # Project license
-'''
+---
 ## Dataset
 The dataset used for training is AudioMNIST, which contains 30,000 audio samples recorded by 60 different speakers, representing spoken digits from 0 to 9. The dataset is publicly available on Kaggle (https://www.kaggle.com/datasets/sripaadsrinivasan/audio-mnist). The audio samples are accompanied by metadata, including speaker gender and age.
 ## Features
